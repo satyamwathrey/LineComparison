@@ -41,9 +41,17 @@ namespace LineComparison
 
             length2 = Math.Sqrt(((a2 - a1) * (a2 - a1)) + ((b2 - b1) * (b2 - b1)));
 
-            if(length1 == length2)
+            if (length1 == length2)
             {
                 Console.WriteLine("Lines are of equal length");
+            }
+            else if (length1 > length2)
+            {
+                Console.WriteLine("Line1 is bigger than Line2");
+            }
+            else
+            {
+                Console.WriteLine("Line2 is bigger than Line1");
             }
             Console.ReadLine();
         }
